@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <title>Play.this[i]</title>
+</head>
+<body>
+    <header>
+        <img id="banner" src="img/play-this-banner.png" alt="Play this logo" class="center">
+    </header>
+    <nav>
+        <div id="sidebar">
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="scores.html">Scores</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div id="toggle-btn" onclick="toggleSideBar(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <form id="user-name">
+        <fieldset>
+            <legend>
+                Please type your name and click submit to begin the game.
+            </legend>
+            <input name="playername" type="text" placeholder="what is your player name" size="60" input id="textboxid" />
+            <button type="submit" id="submit">Start Game</button>
+
+        </fieldset>
+        <button id="clear-name">Clear Name</button>
+    </form>
+    <footer> <p id = 'version'>v1.0.0</p></footer>
+    <script src="js/highscore.js"></script>
+</body>
+</html>
